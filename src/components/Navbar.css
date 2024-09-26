@@ -1,6 +1,13 @@
 .navbar {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   height: 80px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: block;
+  max-width: 200px;
 }

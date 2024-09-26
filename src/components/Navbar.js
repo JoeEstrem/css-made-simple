@@ -5,7 +5,9 @@ import React from 'react';
 function Navbar() {
   return (
     <div className="navbar">
-      <h1>.css made simple</h1>
+      <img src={require('../imgs/css-made-simple-logo.png')} alt="CSS Made Simple Logo" className="navbar-logo" />
+      <p>Components</p>
+      <p>About</p>
     </div>
   );
 }

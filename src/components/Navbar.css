@@ -1,13 +1,12 @@
 .navbar {
-  background-color: white;
-  color: black;
+  background-color: rgb(252, 252, 252);
+  color: rgb(20, 20, 20);
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
-}
-
-.navbar-logo {
-  display: block;
-  max-width: 200px;
+  border-bottom: solid 1px rgb(222, 222, 222);
 }

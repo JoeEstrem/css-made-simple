@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="app-frame">
         <Navbar />
-        <div className="app-body">
+        <div>
           <Sidebar />
           <div className="app-page">
             <Routes>

@@ -5,9 +5,13 @@ import React from 'react';
 function Navbar() {
   return (
     <div className="navbar">
-      <h1>.css made simple</h1>
-      <p>Search</p>
-      <p>About</p>
+        <img
+          src={require('../imgs/css-made-simple-logo.png')}
+          alt="CSS Made Simple Logo"
+          className="navbar-logo"
+          />
+        <p>Search</p>
+        <p>About</p>
     </div>
   );
 }

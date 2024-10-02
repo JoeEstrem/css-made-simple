@@ -1,4 +1,4 @@
-import "./Pages.css";
+import "./CardsPage.css";
 
 import React from 'react';
 

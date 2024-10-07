@@ -3,6 +3,8 @@ import "./ButtonsPage.css";
 import React from 'react';
 
 function ButtonsPage() {
+
+
   return (
     <div>
       <h1>Buttons Page</h1>
@@ -14,23 +16,69 @@ function ButtonsPage() {
           Click me!
         </button>
       </div>
-      <div className="code-card">
-        <p className="code-text">
-          <div>
-            <button>HTML</button>
-            <button>CSS</button>
+
+      {/* COMPONENT CODE */}
+      <div className="code-cards">
+        <div className="code-card"> {/* HTML */}
+          <div className="code-elements">
+            <div>
+              <h2 className="code-h2">HTML Code</h2>
+            </div>
+            <button
+              className="copy-button"
+              onClick={() => {
+                const htmlCode = `<button class="simple-button">Click me!</button>`;
+                navigator.clipboard.writeText(htmlCode).then(() => {
+                  alert('HTML Code copied to clipboard!');
+                }).catch(err => {
+                  console.error('Failed to copy text: ', err);
+                });
+              }}
+            >
+              Copy
+            </button>
           </div>
-          <div id="HTML">
+          <p className="code-text">
             &lt;button class=&quot;simple-button&quot;&gt;Click me!&lt;/button&gt;
+          </p>
+        </div>
+
+        <div className="code-card"> {/* CSS */}
+          <div className="code-elements">
+            <div>
+              <h2 className="code-h2">CSS Code</h2>
+            </div>
+            <button
+              className="copy-button"
+              onClick={() => {
+                const cssCode = `.simple-button {
+                                    background-color: blue;
+                                    color: white;
+                                    border: none;
+                                    padding: 10px 20px;
+                                  }`;
+                navigator.clipboard.writeText(cssCode).then(() => {
+                  alert('CSS Code copied to clipboard!');
+                }).catch(err => {
+                  console.error('Failed to copy text: ', err);
+                });
+              }}
+            >
+              Copy
+            </button>
           </div>
-          <div id="CSS">
-            &lt;button class=&quot;simple-button&quot;&gt;Click me!&lt;/button&gt;
-          </div>
-        </p>
+          <p className="code-text">
+            .simple-button <br />
+                  &nbsp;&nbsp;background-color: blue;<br />
+                  &nbsp;&nbsp;color: white;<br />
+                  &nbsp;&nbsp;border: none;<br />
+                  &nbsp;&nbsp;padding: 10px 20px;<br />
+          </p>
+        </div>
       </div>
-
-
     </div>
+
+
 
 
   );

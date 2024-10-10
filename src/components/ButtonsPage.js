@@ -1,8 +1,24 @@
 import "./ButtonsPage.css";
 
-import React from 'react';
+import React, { useState } from 'react';
+
+
 
 function ButtonsPage() {
+
+  let initialValue = "Copy";
+  const [buttonText, setButtonText] = useState(initialValue);
+  const [buttonClass, setButtonClass] = useState("copy-button-default");
+
+  const handleClick = () => {
+    setButtonText('Copied');
+    setButtonClass('copy-button-active');
+
+    setTimeout(() => {
+      setButtonText(initialValue);
+      setButtonClass('copy-button-default');
+    }, 1500);
+  }
 
 
   return (
@@ -25,17 +41,18 @@ function ButtonsPage() {
               <h2 className="code-h2">HTML Code</h2>
             </div>
             <button
-              className="copy-button"
-              onClick={() => {
-                const htmlCode = `<button class="simple-button">Click me!</button>`;
-                navigator.clipboard.writeText(htmlCode).then(() => {
-                  alert('HTML Code copied to clipboard!');
+              className={buttonClass}
+              onClick={ () => {
+                handleClick();
+                const codeCopy = `<button class="simple-button">Click me!</button>`;
+                navigator.clipboard.writeText(codeCopy).then(() => {
+                  alert('Copied to clipboard!');
                 }).catch(err => {
                   console.error('Failed to copy text: ', err);
                 });
               }}
             >
-              Copy
+              {buttonText}
             </button>
           </div>
           <p className="code-text">
@@ -49,22 +66,23 @@ function ButtonsPage() {
               <h2 className="code-h2">CSS Code</h2>
             </div>
             <button
-              className="copy-button"
-              onClick={() => {
-                const cssCode = `.simple-button {
+              className={buttonClass}
+              onClick={ () => {
+                handleClick();
+                const codeCopy = `.simple-button {
                                     background-color: blue;
                                     color: white;
                                     border: none;
                                     padding: 10px 20px;
                                   }`;
-                navigator.clipboard.writeText(cssCode).then(() => {
-                  alert('CSS Code copied to clipboard!');
+                navigator.clipboard.writeText(codeCopy).then(() => {
+                  alert('Copied to clipboard!');
                 }).catch(err => {
                   console.error('Failed to copy text: ', err);
                 });
               }}
             >
-              Copy
+              {buttonText}
             </button>
           </div>
           <p className="code-text">
@@ -76,12 +94,14 @@ function ButtonsPage() {
           </p>
         </div>
       </div>
+
+
+
+
+
     </div>
-
-
-
-
   );
 }
+
 
 export default ButtonsPage;

@@ -41,17 +41,26 @@
   margin: 0px;
 }
 
-.copy-button {
+.copy-button-default {
   background-color: transparent;
   color: white;
   border: solid 1px white;
   padding: 8px;
   border-radius: 8px;
   font-family: monospace;
-  transition: ease .2s;
+  transition: ease .15s;
 }
 
-.copy-button:hover {
+.copy-button-active {
+  background-color: rgb(0, 255, 127);
+  border: solid 1px rgb(0, 255, 127);
+  padding: 8px;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+
+.copy-button-default:hover {
   color: rgb(25, 25, 25);
   background-color: white;
 }
@@ -70,46 +79,6 @@
   border-radius: 4px;
   width: 36px;
   border: none;
-}
-
-.icon-box:hover {
-  background-color: #05f;
-}
-
-.icon {
-  max-width: 16px;
-  padding: 6px;
-}
-
-.html-button {
-  font-family: monospace;
-  font-size: 12px;
-  height: 32px;
-  width: 64px;
-  border-radius: 8px 0px 0px 8px;
-  background-color: white;
-  border: none;
-  border: solid 1px white;
-  border-right: none;
-}
-
-.html-button:hover {
-  font-weight: bold;
-}
-
-.css-button {
-  font-family: monospace;
-  font-size: 12px;
-  height: 32px;
-  width: 64px;
-  border-radius: 0px 8px 8px 0px;
-  background-color: white;
-  border: solid 1px white;
-  border-left: none;
-}
-
-.css-button:hover {
-  font-weight: bold;
 }
 
 .simple-button {

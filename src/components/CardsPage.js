@@ -4,7 +4,7 @@ import React from 'react';
 
 function CardsPage() {
   return (
-   <h1>Cards Page</h1>
+   <h1>.cards</h1>
   );
 }
 

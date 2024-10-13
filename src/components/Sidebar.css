@@ -4,8 +4,34 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 88px;
+  padding-top: 112px;
   padding-left: 40px;
-  background-color: rgb(252, 252, 252);
-  border-right: solid 1px rgb(222, 222, 222);
+}
+
+
+.category-link {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 500;
+}
+
+.category-link:hover {
+  color: rgb(33, 88, 244);
+}
+
+.category-link:active {
+  color: rgb(33, 88, 244);
+}
+
+.active-link {
+  text-decoration: none;
+  font-family: "Source Sans 3", sans-serif;
+  color: rgb(33, 88, 244);
+  font-weight: 700;
+}
+
+
+.about-spacer {
+  margin-top: 40px;
 }

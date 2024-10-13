@@ -8,6 +8,14 @@
 
 <h2>Creation Journey 🚀</h2> 
 
+<h3>Update 3</h3>
+<img src="Process-Pictures/Update-3.png">
+<ul>
+  <li>Did massive visual overhaul</li>
+  <li>Implemented visual feedback for active links</li>
+  <li>Imported Google Font</li>
+</ul>
+
 <h3>Update 2</h3>
 <img src="Process-Pictures/Update-2.png">
 <ul>

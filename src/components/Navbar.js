@@ -13,7 +13,12 @@ function Navbar() {
           />
       </div>
       <div className="search-bar">
-        <p>Search</p>
+        <div className="search-input">
+          <p>Type your search here...</p>
+        </div>
+        <div>
+          <button className="search-button">Search</button>
+        </div>
       </div>
     </div>
   );

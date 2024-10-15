@@ -15,6 +15,14 @@
 
 <h2>Creation Journey 🚀</h2> 
 
+<h3>Update 4</h3>
+<img src="Process-Pictures/Update-4.png">
+<ul>
+  <li>Improved search bar and side nav styling</li>
+  <li>Added first card to .cards page</li>
+  <li>Added content to .about page</li>
+</ul>
+
 <h3>Update 3</h3>
 <img src="Process-Pictures/Update-3.png">
 <ul>

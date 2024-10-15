@@ -12,7 +12,7 @@
 
 .app-page {
   margin-top: 112px;
-  margin-left: 280px;
+  margin-left: 218px;
   margin-right: 40px;
   padding: 40px;
   border-radius: 16px;
@@ -20,6 +20,6 @@
   background-color: white;
   position: fixed;
   height: 100vh;
-  width: calc(100vw - 380px);
+  width: calc(100vw - 320px);
   overflow-y: auto;
 }

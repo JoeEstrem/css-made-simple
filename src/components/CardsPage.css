@@ -97,6 +97,9 @@ p {
   margin: 64px 0px;
 }
 
+.page-bottom {
+  height: 200px;
+}
 
 .glass-card-background {
   background-image: url("../imgs/glass-background.png");
@@ -128,4 +131,18 @@ p {
 .glass-card-description {
   margin: -16px 0px 0px 0px;
   font-weight: 300;
+}
+
+.property-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 4px rgba(25, 25, 25, .2)
+}
+
+.property-card-img {
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 180px;
 }

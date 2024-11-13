@@ -23,7 +23,7 @@ function CardsPage() {
       <h1>.cards</h1>
 
        {/* COMPONENT */}
-       <h2>.glass-card</h2>
+       <h2 id="glass-card">.glass-card</h2>
       <div className="component-block">
         <div className="component-card glass-card-background">
           <div className="glass-card">
@@ -110,7 +110,7 @@ function CardsPage() {
               </button>
             </div>
             <p className="code-text">
-              .glass-card <br />
+              .glass-card &#123;<br />
               &nbsp;&nbsp;background-color: rgba(255, 255, 255, .05);<br />
               &nbsp;&nbsp;backdrop-filter: blur(10px);<br />
               &nbsp;&nbsp;border: 2px solid rgba (255, 255, 255, .25);<br />
@@ -120,11 +120,13 @@ function CardsPage() {
               &nbsp;&nbsp;display: flex;<br />
               &nbsp;&nbsp;flex-direction: column;<br />
               &nbsp;&nbsp;align-items: center;<br />
+              &#125;<br />
               <br />
-              .glass-card-avatar <br />
+              .glass-card-avatar &#123;<br />
                 &nbsp;&nbsp;border-radius: 50%;<br />
                 &nbsp;&nbsp;border: 2px solid rgba (255, 255, 255, .25);<br />
                 &nbsp;&nbsp;width: 128px%;<br />
+                &#125;<br />
             </p>
           </div>
         </div>
@@ -133,7 +135,7 @@ function CardsPage() {
       <div className="divider"></div>
 
       {/* COMPONENT */}
-      <h2>.property-card</h2>
+      <h2 id="property-card">.property-card</h2>
       <div className="component-block">
         <div className="component-card">
           <div className="property-card">

@@ -1,8 +1,16 @@
 import "./Navbar.css";
 
-import React from 'react';
+import React, { useState } from 'react';
 
-function Navbar() {
+function Navbar({ onSearch }) {
+  const [query, setQuery] = useState('');
+
+  const handleInputChange = (event) => {
+    const newQuery = event.target.value;
+    setQuery(newQuery);
+    onSearch(newQuery);
+  };
+
   return (
     <div className="navbar">
       <div>
@@ -13,12 +21,13 @@ function Navbar() {
           />
       </div>
       <div className="search-bar">
-        <div className="search-input">
-          <p>Type your search here...</p>
-        </div>
-        <div>
-          <button className="search-button">Search</button>
-        </div>
+        <input
+          type="text"
+          placeholder="Type your search here..."
+          value={query}
+          onChange={handleInputChange}
+          className="search-input"
+        />
       </div>
     </div>
   );

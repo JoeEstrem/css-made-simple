@@ -23,3 +23,10 @@
   width: calc(100vw - 320px);
   overflow-y: auto;
 }
+
+.search-results {
+  background-color: rgba(33, 88, 244, .08);
+  padding: 16px;
+  margin: -16px;
+  border-radius: 8px;
+}

@@ -140,9 +140,13 @@ p {
   box-shadow: 0 4px 4px rgba(25, 25, 25, .2)
 }
 
+.property-card-img-container {
+  border-radius: 16px;
+  width: 180px;
+}
+
 .property-card-img {
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
-  width: 180px;
 }

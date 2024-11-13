@@ -3,9 +3,7 @@ import "./ButtonsPage.css";
 import React, { useState } from 'react';
 
 
-
 function ButtonsPage() {
-
   let initialValue = "Copy";
   const [buttonText] = useState(initialValue);
 
@@ -26,7 +24,7 @@ function ButtonsPage() {
       <h1>.buttons</h1>
 
       {/* COMPONENT */}
-      <h2>.simple-button</h2>
+      <h2 id="simple-button">.simple-button</h2>
       <div className="component-block">
         <div className="component-card">
           <button className="simple-button">
@@ -111,7 +109,7 @@ function ButtonsPage() {
       <div className="divider"></div>
 
       {/* COMPONENT */}
-      <h2>.bevel-button</h2>
+      <h2 id="bevel-button">.bevel-button</h2>
             <div className="component-block">
               <div className="component-card">
                 <button className="bevel-button">
@@ -199,6 +197,5 @@ function ButtonsPage() {
     </div>
   );
 }
-
 
 export default ButtonsPage;

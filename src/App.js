@@ -46,7 +46,7 @@ function App() {
                   </div>
                 ))
               ) : (
-                <p>No results found.</p>
+                <p>results: none;</p>
               )}
             <h2>&#125;</h2>
             </div>

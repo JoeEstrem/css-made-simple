@@ -15,6 +15,14 @@
 
 <h2>Creation Journey 🚀</h2> 
 
+<h3>Update 5</h3>
+<img src="Process-Pictures/Update-5.png">
+<ul>
+  <li>Made search bar functional</li>
+  <li>Click search results redirects you to the components location</li>
+  <li>Fixed some style errors</li>
+</ul>
+
 <h3>Update 4</h3>
 <img src="Process-Pictures/Update-4.png">
 <ul>

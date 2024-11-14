@@ -16,6 +16,7 @@ function App() {
   const data = [
     { id: 1, content: '.simple-button', route: '/buttons#simple-button'},
     { id: 2, content: '.bevel-button', route: '/buttons#bevel-button'},
+    { id: 3, content: '.retro-button', route: '/buttons#retro-button'},
     { id: 10, content: '.glass-card', route: '/cards#glass-card'},
     { id: 11, content: '.property-card', route: '/cards#property-card'},
     { id: 100, content: '.about', route: '/about'}

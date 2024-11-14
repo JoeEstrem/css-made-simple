@@ -186,9 +186,98 @@ function ButtonsPage() {
                       &#125;<br />
                       <br />
                     .bevel-button:hover &#123;<br />
-                      &nbsp;&nbsp;box-shadow:;<br />
+                      &nbsp;&nbsp;box-shadow:<br />
                       &nbsp;&nbsp;8px 8px 8px rgba(0, 0, 0, 0.1),<br />
                       &nbsp;&nbsp;-8px -8px 8px white;<br />
+                      &#125;<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="divider"></div>
+
+      {/* COMPONENT */}
+      <h2 id="retro-button">.retro-button</h2>
+            <div className="component-block">
+              <div className="component-card">
+                <button className="retro-button">
+                  Click me!
+                </button>
+              </div>
+
+              {/* COMPONENT CODE */}
+              <div className="code-cards">
+                <div className="code-card"> {/* HTML */}
+                  <div className="code-elements">
+                    <div>
+                      <h2 className="code-h2">HTML Code</h2>
+                    </div>
+                    <button
+                      className="copy-button-default"
+                      onClick={ (event) => {
+                        handleClick(event);
+                        const codeCopy = `<button class="bevel-button">Click me!</button>`;
+                        navigator.clipboard.writeText(codeCopy).then(() => {
+                          alert('Copied to clipboard!');
+                        }).catch(err => {
+                          console.error('Failed to copy text: ', err);
+                        });
+                      }}
+                    >
+                      {buttonText}
+                    </button>
+                  </div>
+                  <p className="code-text">
+                    &lt;button class=&quot;retro-button&quot;&gt;Click me!&lt;/button&gt;
+                  </p>
+                </div>
+
+                <div className="code-card"> {/* CSS */}
+                  <div className="code-elements">
+                    <div>
+                      <h2 className="code-h2">CSS Code</h2>
+                    </div>
+                    <button
+                      className="copy-button-default"
+                      onClick={ (event) => {
+                        handleClick(event);
+                        const codeCopy = `.retro-button {
+                                            font-family: monospace;
+                                            font-size: 16px;
+                                            background: rgb(253, 253, 253);
+                                            padding: 24px 40px;
+                                            box-shadow: 3px 3px 0px 3px rgb(25, 25, 25)
+                                          }
+
+                                          .retro-button:hover {
+                                            transform: translate(6px, 6px);
+                                            background-color: rgb(240, 240, 240);
+                                            box-shadow: 0px 0px 0px 0px rgb(25, 25, 25);
+                                          }`;
+                        navigator.clipboard.writeText(codeCopy).then(() => {
+                          alert('Copied to clipboard!');
+                        }).catch(err => {
+                          console.error('Failed to copy text: ', err);
+                        });
+                      }}
+                    >
+                      {buttonText}
+                    </button>
+                  </div>
+                  <p className="code-text">
+                    .retro-button &#123;<br />
+                      &nbsp;&nbsp;font-family: monospace;<br />
+                      &nbsp;&nbsp;font-size: 16px;<br />
+                      &nbsp;&nbsp;background: rgb(253, 253, 253);<br />
+                      &nbsp;&nbsp;padding: 24px 40px;<br />
+                      &nbsp;&nbsp;box-shadow: 3px 3px 0px 3px rgb(25, 25, 25);<br />
+                      &#125;<br />
+                      <br />
+                    .retro-button:hover &#123;<br />
+                      &nbsp;&nbsp;transform: translate(6px, 6px);<br />
+                      &nbsp;&nbsp;background-color: rgb(240, 240, 240);<br />
+                      &nbsp;&nbsp;box-shadow: 0px 0px 0px 0px rgb(25, 25,25 )<br />
                       &#125;<br />
                   </p>
                 </div>
